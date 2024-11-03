@@ -47,9 +47,15 @@ h2 {
 }
 
 p.lead {
-    color: #666;
+    color: #f2ecec;
     font-size: 1.2rem;
     margin-top: 0.5rem;
+}
+
+.lead {
+    color: #ffffff; /* Warna putih untuk kontras dengan latar belakang gelap */
+    font-size: 1.5rem; /* Ukuran font yang lebih besar */
+    text-align: center; /* Menyelaraskan teks di tengah */
 }
 
 @media (max-width: 768px) {
@@ -120,6 +126,32 @@ nav ul li a {
     color: #020202;
 }
 
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Membesarkan card saat hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Membuat sudut atas card melengkung */
+}
+
+.card-body {
+    background-color: #f8f9fa; /* Warna latar belakang card body */
+    border-radius: 0 0 10px 10px; /* Membuat sudut bawah card melengkung */
+}
+
+.card-title {
+    font-weight: bold; /* Menebalkan judul */
+    color: #343a40; /* Warna teks judul */
+}
+
+.card-text {
+    color: #6c757d; /* Warna teks deskripsi */
+}
 
 .blog-posts {
     padding: 20px;
