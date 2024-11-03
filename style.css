@@ -5,7 +5,6 @@
 }
 
 body {
-    /* background-image: url('walpp.jpg'); */ /* Uncomment if needed */
     font-size: 18px;
     line-height: 1.6;
     color: #fff;
@@ -16,29 +15,20 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh; /* Tinggi section profil */
-    background-image: url('walpp.jpg'); /* Tambahkan gambar background di sini */
-    background-size: cover; /* Gambar menyesuaikan ukuran section */
-    background-position: center center; /* Posisikan gambar di tengah */
-    background-repeat: no-repeat; /* Gambar tidak berulang */
-    background-attachment: fixed; /* Gambar tetap saat scroll */
+    height: 100vh;
+    background-image: url('walpp.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 .profile-picture {
     width: 200px;
-    height: 200px; /* Mengatur ukuran gambar profil */
+    height: 200px; 
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.hero-section {
-    display: none; /* Sembunyikan hero section jika tidak diperlukan */
-}
-
-.hero-section h1, .hero-section p {
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Tambah bayangan pada teks */
 }
 
 h2 {
@@ -46,28 +36,22 @@ h2 {
     font-weight: bold;
 }
 
-p.lead {
-    color: #f2ecec;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
 .lead {
-    color: #ffffff; /* Warna putih untuk kontras dengan latar belakang gelap */
-    font-size: 1.5rem; /* Ukuran font yang lebih besar */
-    text-align: center; /* Menyelaraskan teks di tengah */
+    color: #ffffff;
+    font-size: 1.5rem; 
+    text-align: center; 
 }
 
 @media (max-width: 768px) {
     .profile-picture {
-        width: 150px; /* Ukuran lebih kecil untuk mobile */
+        width: 150px; 
         height: 150px;
     }
 }
 
 @media (max-width: 576px) {
     .profile-picture {
-        width: 120px; /* Ukuran lebih kecil untuk layar yang lebih kecil */
+        width: 120px; 
         height: 120px;
     }
 }
@@ -109,48 +93,31 @@ nav ul li a {
     text-align: center;
 }
 
-.intro h2 {
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 18px;
-    color: #666;
-}
-
-.card-title {
-    color: #131415;
-}
-
-.card-text {
-    color: #020202;
-}
-
 .card {
-    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Membesarkan card saat hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-    border-radius: 10px 10px 0 0; /* Membuat sudut atas card melengkung */
+    border-radius: 10px 10px 0 0;
 }
 
 .card-body {
-    background-color: #f8f9fa; /* Warna latar belakang card body */
-    border-radius: 0 0 10px 10px; /* Membuat sudut bawah card melengkung */
+    background-color: #f8f9fa; 
+    border-radius: 0 0 10px 10px; 
 }
 
 .card-title {
-    font-weight: bold; /* Menebalkan judul */
-    color: #343a40; /* Warna teks judul */
+    font-weight: bold; 
+    color: #343a40; 
 }
 
 .card-text {
-    color: #6c757d; /* Warna teks deskripsi */
+    color: #6c757d; 
 }
 
 .blog-posts {
@@ -190,18 +157,17 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative; /* Mengubah menjadi relative agar footer selalu di bawah */
     width: 100%;
 }
 
 /* Contact Section */
+#contact {
+    text-align: center;
+}
+
 #contact h2 {
     color: #333;
     margin-bottom: 30px;
-}
-
-#contact .bi {
-    color: #007bff;
 }
 
 #contact a {
