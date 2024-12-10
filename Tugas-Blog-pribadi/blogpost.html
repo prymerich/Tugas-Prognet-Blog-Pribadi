@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts - Krishna Richad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary-subtle p-4">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Krishna Richad</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.php">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogpost.html">Blog Posts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>My Content</h1>
+        <p>Get to know me</p>
+    </div>
+    <div class="content">
+        <div class="row">
+            <!-- Post 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="post-card">
+                    <div class="video-container">
+                        <img src="./gambarpost/istriku.jpeg" class="thumbnail" alt="Post Image">
+                        <video id="videoElement" class="video" src="./video/mommy.mp4" preload="metadata"></video>
+                    </div>
+                    <h5 class="post-title mt-3">My Favourite Character Intro</h5>
+                    <p class="post-description">Demo Trailer</p>
+                    <a href="post1.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="post-card">
+                    <div class="video-container">
+                        <img src="./gambarpost/ksi.jpeg" class="thumbnail" alt="Post Image">
+                        <video id="videoElement" class="video" src="./video/ksi.mp4" preload="metadata"></video>
+                    </div>
+                    <h5 class="post-title mt-3">This song goes fire on mute!!</h5>
+                    <p class="post-description">Lagu populer dari KSI!</p>
+                    <a href="post2.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="post-card">
+                    <div class="video-container">
+                        <img src="./gambarpost/rappa.jpeg" class="thumbnail" alt="Post Image">
+                        <video id="videoElement" class="video" src="./video/rappa.mp4" preload="metadata"></video>
+                    </div>
+                    <h5 class="post-title mt-3">Karakter baru di hsr?</h5>
+                    <p class="post-description">Apakah worth it digacha?</p>
+                    <a href="post3.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Post 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="post-card">
+                    <div class="video-container">
+                        <img src="./gambarpost/asede.jpeg" class="thumbnail" alt="Post Image">
+                        <video id="videoElement" class="video" src="./video/asede.mp4" preload="metadata"></video>
+                    </div>
+                    <h5 class="post-title mt-3">Ruan Mei jika bosan</h5>
+                    <p class="post-description">Tonton sampai akhir.</p>
+                    <a href="post4.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Post 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="post-card">
+                    <div class="video-container">
+                        <img src="gambarpost/pvz.jpeg" class="thumbnail" alt="Post Image">
+                        <video id="videoElement" class="video" src="./video/ksi.mp4" preload="metadata"></video>
+                    </div>
+                    <h5 class="post-title mt-3">Fusion Baru di PVZ?</h5>
+                    <p class="post-description">mari kita lihat seberapa tangguh!</p>
+                    <a href="post5.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const videoContainers = document.querySelectorAll('.video-container');
+        
+        videoContainers.forEach(container => {
+            const videoElement = container.querySelector('.video');
+        
+            container.addEventListener('mouseenter', () => {
+                videoElement.currentTime = 0; // Set waktu video ke 0 (awal)
+                videoElement.volume = 1.0; // Atur volume ke maksimum
+                videoElement.play().catch((error) => {
+                    console.error("Video playback failed:", error);
+                }); // Mulai memutar video, tangkap kesalahan
+            });
+        
+            container.addEventListener('mouseleave', () => {
+                videoElement.pause(); // Hentikan pemutaran video
+                videoElement.currentTime = 0; // Set waktu video ke 0 (awal) jika ingin reset
+            });
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.progress-bar{
+    color: #2b9146;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('walpp.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.lead {
+    color: #ffffff;
+    font-size: 1.5rem; 
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 150px; 
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-picture {
+        width: 120px; 
+        height: 120px;
+    }
+}
+
+#post {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #28a745;
+    padding: 50px 0;
+}
+
+.song-container {
+    display: flex; 
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 20px;
+    width: 98vw;
+}
+
+.song-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.song-card {
+    background-color: #f9fcfa; /* Warna latar belakang default */
+    border: 7px solid #2b9146; /* Warna border default */
+    border-radius: 0.5rem; /* Radius sudut */
+    color: #28a745;
+}
+
+.lagu{
+    flex: 0 0 auto;
+    width: 350px;
+}
+
+body{
+  background:#f1f1f1;
+  font-family: 'Inconsolata', monospace;
+  font-weight:bold;
+  color:gray;
+  text-align:center;
+  -webkit-font-smoothing: antialiased;
+}
+.box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10%;
+}
+.box{
+  padding:30px;
+  margin:2%;
+  background:white;
+  width:200%;
+  border:1px solid #d6d6d6;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all; 
+}
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(17, 18, 68, 0.073);
+    color: white;
+    padding: 20px;
+    position: fixed; 
+    width: 100%;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    background-color: #f8f9fa; 
+    border-radius: 0 0 10px 10px; 
+}
+
+.card-title {
+    font-weight: bold; 
+    color: #343a40; 
+}
+
+.card-textSong {
+    color: #6c757d;
+}
+
+.card-text {
+    color: #6c757d;
+    text-align: justify;
+}
+
+.blog-posts {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.blog-posts h2 {
+    margin-bottom: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.post p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.post a {
+    color: #333;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.social a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #007bff;
+}
+
+.social i {
+    font-size: 2.5rem;
+}
+
+p {
+    color: black;
+}
+
