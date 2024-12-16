@@ -10,6 +10,10 @@ body {
     color: #fff;
 }
 
+.progress-bar{
+    color: #2b9146;
+}
+
 .profile-section {
     display: flex;
     justify-content: center;
@@ -54,6 +58,78 @@ h2 {
         width: 120px; 
         height: 120px;
     }
+}
+
+#post {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #28a745;
+    padding: 50px 0;
+}
+
+.song-container {
+    display: flex; 
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 20px;
+    width: 98vw;
+}
+
+.song-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.song-card {
+    background-color: #f9fcfa; /* Warna latar belakang default */
+    border: 7px solid #2b9146; /* Warna border default */
+    border-radius: 0.5rem; /* Radius sudut */
+    color: #28a745;
+}
+
+.lagu{
+    flex: 0 0 auto;
+    width: 350px;
+}
+
+body{
+  background:#f1f1f1;
+  font-family: 'Inconsolata', monospace;
+  font-weight:bold;
+  color:gray;
+  text-align:center;
+  -webkit-font-smoothing: antialiased;
+}
+.box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10%;
+}
+.box{
+  padding:30px;
+  margin:2%;
+  background:white;
+  width:200%;
+  border:1px solid #d6d6d6;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all; 
+}
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
 }
 
 header {
@@ -116,8 +192,13 @@ nav ul li a {
     color: #343a40; 
 }
 
+.card-textSong {
+    color: #6c757d;
+}
+
 .card-text {
-    color: #6c757d; 
+    color: #6c757d;
+    text-align: justify;
 }
 
 .blog-posts {
@@ -198,3 +279,8 @@ footer {
 .social i {
     font-size: 2.5rem;
 }
+
+p {
+    color: black;
+}
+
