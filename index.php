@@ -43,7 +43,7 @@
     <section class="profile-section text-center p-5">
         <div class="container">
             <img src="pp.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-picture" id="profilePicture">
-            <h2 class="mt-3">Krishna Richad (uwaw)</h2>
+            <h2 class="mt-3">Krishna Richad (naww)</h2>
             <p class="lead">Web Developer | Blogger | Gamer</p>
         </div>
     </section>
@@ -82,7 +82,7 @@
                         </script>
                         <!-- Lagu 1 -->
                         <div class="box-wrap">
-                            <div class="box">
+                            <div clapss="box">
                               <p>more >>>></p>
                             </div>
                           </div>
