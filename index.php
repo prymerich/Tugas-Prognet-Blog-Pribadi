@@ -43,7 +43,7 @@
     <section class="profile-section text-center p-5">
         <div class="container">
             <img src="pp.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-picture" id="profilePicture">
-            <h2 class="mt-3">Krishna Richad (Suami Ruan Mei)</h2>
+            <h2 class="mt-3">Krishna Richad (waduh)</h2>
             <p class="lead">Web Developer | Blogger | Gamer</p>
         </div>
     </section>
